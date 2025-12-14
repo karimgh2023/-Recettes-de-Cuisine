@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes de Cuisine - Toutes les Recettes</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍳 Recettes de Cuisine</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="recettes.html" class="active">Recettes</a></li>
+                    <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Filtres -->
+    <section class="filters-section">
+        <div class="container">
+            <h2 class="section-title">Toutes les Recettes</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Catégorie:</label>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">Toutes les catégories</option>
+                        <option value="entree">Entrées</option>
+                        <option value="plat">Plats Principaux</option>
+                        <option value="dessert">Desserts</option>
+                        <option value="boisson">Boissons</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="difficultyFilter">Difficulté:</label>
+                    <select id="difficultyFilter" class="filter-select">
+                        <option value="all">Tous les niveaux</option>
+                        <option value="facile">Facile</option>
+                        <option value="intermediaire">Intermédiaire</option>
+                        <option value="difficile">Difficile</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="timeFilter">Temps de préparation:</label>
+                    <select id="timeFilter" class="filter-select">
+                        <option value="all">Tous les temps</option>
+                        <option value="15">Moins de 15 min</option>
+                        <option value="30">Moins de 30 min</option>
+                        <option value="60">Moins de 1h</option>
+                        <option value="60+">Plus de 1h</option>
+                    </select>
+                </div>
+                <button id="resetFilters" class="btn-secondary">Réinitialiser</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liste des Recettes -->
+    <section class="recipes-section">
+        <div class="container">
+            <div id="recipesContainer" class="recipes-grid">
+                <!-- Les recettes seront chargées dynamiquement -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>Aucune recette ne correspond à vos critères.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+        <div class="container">
+            <div id="pagination" class="pagination">
+                <!-- La pagination sera générée dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recettes de Cuisine</h3>
+                    <p>Votre destination pour découvrir et partager des recettes délicieuses.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="recettes.html">Recettes</a></li>
+                        <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" aria-label="YouTube">📺 YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@recettes-cuisine.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Recettes de Cuisine. Tous droits réservés.</p>
+                <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/filters.js"></script>
+</body>
+</html>
+

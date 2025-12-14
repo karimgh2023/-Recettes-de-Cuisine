@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes de Cuisine - Contact</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍳 Recettes de Cuisine</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="recettes.html">Recettes</a></li>
+                    <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Contact -->
+    <main class="contact-page">
+        <div class="container">
+            <h2 class="page-title">Contactez-nous</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Coordonnées</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>📧 Email:</strong>
+                            <p>contact@recettes-cuisine.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📞 Téléphone:</strong>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>📍 Adresse:</strong>
+                            <p>123 Rue de la Cuisine<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺 YouTube</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Nom *</label>
+                            <input type="text" id="contactName" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Sujet *</label>
+                            <input type="text" id="contactSubject" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" rows="6" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Envoyer le message</button>
+                    </form>
+
+                    <div id="contactSuccessMessage" class="success-message" style="display: none;">
+                        <h3>✅ Message envoyé avec succès !</h3>
+                        <p>Nous vous répondrons dans les plus brefs délais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recettes de Cuisine</h3>
+                    <p>Votre destination pour découvrir et partager des recettes délicieuses.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="recettes.html">Recettes</a></li>
+                        <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" aria-label="YouTube">📺 YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@recettes-cuisine.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Recettes de Cuisine. Tous droits réservés.</p>
+                <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/validation.js"></script>
+</body>
+</html>
+

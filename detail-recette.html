@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes de Cuisine - Détail de la Recette</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍳 Recettes de Cuisine</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="recettes.html">Recettes</a></li>
+                    <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Détail de la Recette -->
+    <main class="recipe-detail">
+        <div class="container">
+            <div id="recipeDetail" class="recipe-detail-content">
+                <!-- Le contenu sera chargé dynamiquement -->
+            </div>
+
+            <!-- Section Partage -->
+            <section class="share-section">
+                <h3>Partager cette recette</h3>
+                <div class="share-buttons">
+                    <button class="share-btn facebook" data-platform="facebook" aria-label="Partager sur Facebook">
+                        📘 Facebook
+                    </button>
+                    <button class="share-btn twitter" data-platform="twitter" aria-label="Partager sur Twitter">
+                        🐦 Twitter
+                    </button>
+                    <button class="share-btn whatsapp" data-platform="whatsapp" aria-label="Partager sur WhatsApp">
+                        💬 WhatsApp
+                    </button>
+                    <button class="share-btn email" data-platform="email" aria-label="Partager par email">
+                        📧 Email
+                    </button>
+                </div>
+            </section>
+
+            <!-- Section Notation -->
+            <section class="rating-section">
+                <h3>Notez cette recette</h3>
+                <div class="star-rating">
+                    <span class="star" data-rating="1">⭐</span>
+                    <span class="star" data-rating="2">⭐</span>
+                    <span class="star" data-rating="3">⭐</span>
+                    <span class="star" data-rating="4">⭐</span>
+                    <span class="star" data-rating="5">⭐</span>
+                </div>
+                <p class="rating-text">Note moyenne: <span id="averageRating">0</span>/5 (<span id="ratingCount">0</span> avis)</p>
+            </section>
+
+            <!-- Section Commentaires -->
+            <section class="comments-section">
+                <h3>Commentaires</h3>
+                <form id="commentForm" class="comment-form">
+                    <div class="form-group">
+                        <label for="commentName">Nom:</label>
+                        <input type="text" id="commentName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="commentText">Votre commentaire:</label>
+                        <textarea id="commentText" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Publier le commentaire</button>
+                </form>
+                <div id="commentsList" class="comments-list">
+                    <!-- Les commentaires seront chargés dynamiquement -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recettes de Cuisine</h3>
+                    <p>Votre destination pour découvrir et partager des recettes délicieuses.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="recettes.html">Recettes</a></li>
+                        <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" aria-label="YouTube">📺 YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@recettes-cuisine.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Recettes de Cuisine. Tous droits réservés.</p>
+                <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/comments.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "name": "Pâtes Carbonara",
+    "category": "plat",
+    "difficulty": "intermediaire",
+    "prepTime": 15,
+    "cookTime": 20,
+    "servings": 4,
+    "image": "https://via.placeholder.com/400x300?text=Pates+Carbonara",
+    "description": "Un classique italien crémeux et savoureux",
+    "ingredients": [
+      "400g de pâtes",
+      "200g de lardons",
+      "4 œufs",
+      "100g de parmesan râpé",
+      "Poivre noir",
+      "Sel"
+    ],
+    "steps": [
+      "Faire cuire les pâtes dans une grande casserole d'eau bouillante salée.",
+      "Pendant ce temps, faire revenir les lardons dans une poêle jusqu'à ce qu'ils soient croustillants.",
+      "Dans un bol, mélanger les œufs avec le parmesan râpé et le poivre.",
+      "Égoutter les pâtes en conservant un peu d'eau de cuisson.",
+      "Mélanger les pâtes avec les lardons, puis ajouter le mélange œufs-parmesan hors du feu.",
+      "Mélanger rapidement en ajoutant un peu d'eau de cuisson si nécessaire. Servir immédiatement."
+    ],
+    "rating": 4.5,
+    "ratingCount": 24
+  },
+  {
+    "id": 2,
+    "name": "Salade César",
+    "category": "entree",
+    "difficulty": "facile",
+    "prepTime": 15,
+    "cookTime": 0,
+    "servings": 4,
+    "image": "https://via.placeholder.com/400x300?text=Salade+Cesar",
+    "description": "Une salade fraîche et croquante avec une sauce crémeuse",
+    "ingredients": [
+      "1 salade romaine",
+      "200g de poulet grillé",
+      "100g de parmesan",
+      "Croûtons",
+      "Sauce César",
+      "Anchois (optionnel)"
+    ],
+    "steps": [
+      "Laver et couper la salade romaine en morceaux.",
+      "Couper le poulet grillé en dés.",
+      "Préparer la sauce César.",
+      "Mélanger la salade avec la sauce dans un grand saladier.",
+      "Ajouter le poulet, les croûtons et le parmesan.",
+      "Mélanger délicatement et servir immédiatement."
+    ],
+    "rating": 4.2,
+    "ratingCount": 18
+  },
+  {
+    "id": 3,
+    "name": "Tiramisu",
+    "category": "dessert",
+    "difficulty": "intermediaire",
+    "prepTime": 30,
+    "cookTime": 0,
+    "servings": 6,
+    "image": "https://via.placeholder.com/400x300?text=Tiramisu",
+    "description": "Le dessert italien classique au café et mascarpone",
+    "ingredients": [
+      "500g de mascarpone",
+      "6 œufs",
+      "100g de sucre",
+      "200g de biscuits à la cuillère",
+      "Café fort",
+      "Cacao en poudre"
+    ],
+    "steps": [
+      "Séparer les blancs des jaunes d'œufs.",
+      "Battre les jaunes avec le sucre jusqu'à ce que le mélange blanchisse.",
+      "Ajouter le mascarpone et mélanger.",
+      "Monter les blancs en neige ferme et les incorporer délicatement.",
+      "Tremper rapidement les biscuits dans le café froid.",
+      "Disposer une couche de biscuits dans un plat, puis une couche de crème.",
+      "Répéter les couches et terminer par saupoudrer de cacao.",
+      "Réfrigérer au moins 4 heures avant de servir."
+    ],
+    "rating": 4.8,
+    "ratingCount": 32
+  },
+  {
+    "id": 4,
+    "name": "Smoothie aux Fruits",
+    "category": "boisson",
+    "difficulty": "facile",
+    "prepTime": 5,
+    "cookTime": 0,
+    "servings": 2,
+    "image": "https://via.placeholder.com/400x300?text=Smoothie+Fruits",
+    "description": "Un smoothie rafraîchissant et vitaminé",
+    "ingredients": [
+      "2 bananes",
+      "200g de fraises",
+      "200ml de lait",
+      "2 cuillères à soupe de miel",
+      "Glaçons"
+    ],
+    "steps": [
+      "Éplucher et couper les bananes.",
+      "Laver et équeuter les fraises.",
+      "Mettre tous les ingrédients dans un blender.",
+      "Mixer jusqu'à obtenir une texture lisse.",
+      "Servir immédiatement avec des glaçons."
+    ],
+    "rating": 4.0,
+    "ratingCount": 15
+  },
+  {
+    "id": 5,
+    "name": "Risotto aux Champignons",
+    "category": "plat",
+    "difficulty": "difficile",
+    "prepTime": 10,
+    "cookTime": 30,
+    "servings": 4,
+    "image": "https://via.placeholder.com/400x300?text=Risotto+Champignons",
+    "description": "Un risotto crémeux aux champignons parfumés",
+    "ingredients": [
+      "300g de riz arborio",
+      "300g de champignons",
+      "1 oignon",
+      "1 litre de bouillon chaud",
+      "100ml de vin blanc",
+      "50g de beurre",
+      "100g de parmesan",
+      "Persil"
+    ],
+    "steps": [
+      "Faire chauffer le bouillon dans une casserole.",
+      "Faire revenir l'oignon dans une grande poêle avec un peu de beurre.",
+      "Ajouter le riz et faire revenir 2 minutes.",
+      "Verser le vin blanc et laisser absorber.",
+      "Ajouter le bouillon louche par louche en remuant constamment.",
+      "Faire revenir les champignons séparément.",
+      "Quand le riz est cuit, ajouter les champignons, le beurre et le parmesan.",
+      "Mélanger et servir avec du persil haché."
+    ],
+    "rating": 4.6,
+    "ratingCount": 21
+  },
+  {
+    "id": 6,
+    "name": "Brownies au Chocolat",
+    "category": "dessert",
+    "difficulty": "facile",
+    "prepTime": 15,
+    "cookTime": 25,
+    "servings": 8,
+    "image": "https://via.placeholder.com/400x300?text=Brownies+Chocolat",
+    "description": "Des brownies moelleux et fondants",
+    "ingredients": [
+      "200g de chocolat noir",
+      "150g de beurre",
+      "3 œufs",
+      "150g de sucre",
+      "80g de farine",
+      "50g de noix (optionnel)"
+    ],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Faire fondre le chocolat et le beurre au bain-marie.",
+      "Battre les œufs avec le sucre jusqu'à ce que le mélange blanchisse.",
+      "Ajouter le chocolat fondu et mélanger.",
+      "Incorporer la farine délicatement.",
+      "Ajouter les noix si désiré.",
+      "Verser dans un moule carré et cuire 25 minutes.",
+      "Laisser refroidir avant de découper."
+    ],
+    "rating": 4.7,
+    "ratingCount": 28
+  }
+]
+

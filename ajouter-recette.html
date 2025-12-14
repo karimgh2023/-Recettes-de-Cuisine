@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes de Cuisine - Ajouter une Recette</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍳 Recettes de Cuisine</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="recettes.html">Recettes</a></li>
+                    <li><a href="ajouter-recette.html" class="active">Ajouter une recette</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Formulaire d'Ajout de Recette -->
+    <main class="add-recipe-page">
+        <div class="container">
+            <h2 class="page-title">Ajouter une Nouvelle Recette</h2>
+            
+            <div class="terms-notice">
+                <h3>Conditions d'utilisation</h3>
+                <p>En ajoutant une recette, vous certifiez que :</p>
+                <ul>
+                    <li>La recette est originale et n'est pas dupliquée</li>
+                    <li>Vous avez le droit de partager cette recette</li>
+                    <li>Les informations fournies sont exactes</li>
+                </ul>
+            </div>
+
+            <form id="addRecipeForm" class="recipe-form">
+                <div class="form-section">
+                    <h3>Informations Générales</h3>
+                    
+                    <div class="form-group">
+                        <label for="recipeName">Nom de la recette *</label>
+                        <input type="text" id="recipeName" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recipeCategory">Catégorie *</label>
+                        <select id="recipeCategory" required>
+                            <option value="">Sélectionnez une catégorie</option>
+                            <option value="entree">Entrée</option>
+                            <option value="plat">Plat Principal</option>
+                            <option value="dessert">Dessert</option>
+                            <option value="boisson">Boisson</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recipeDifficulty">Difficulté *</label>
+                        <select id="recipeDifficulty" required>
+                            <option value="">Sélectionnez le niveau</option>
+                            <option value="facile">Facile</option>
+                            <option value="intermediaire">Intermédiaire</option>
+                            <option value="difficile">Difficile</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prepTime">Temps de préparation (minutes) *</label>
+                            <input type="number" id="prepTime" min="1" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cookTime">Temps de cuisson (minutes)</label>
+                            <input type="number" id="cookTime" min="0">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servings">Nombre de portions *</label>
+                            <input type="number" id="servings" min="1" required>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="recipeImage">Image de la recette</label>
+                        <input type="file" id="recipeImage" accept="image/*">
+                        <small>Formats acceptés: JPG, PNG, GIF (max 5MB)</small>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Ingrédients</h3>
+                    <div id="ingredientsList" class="ingredients-list">
+                        <div class="ingredient-item">
+                            <input type="text" class="ingredient-input" placeholder="Ex: 200g de farine">
+                            <button type="button" class="btn-remove-ingredient">✕</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addIngredient" class="btn-secondary">+ Ajouter un ingrédient</button>
+                    <span class="error-message" id="ingredientsError"></span>
+                </div>
+
+                <div class="form-section">
+                    <h3>Étapes de Préparation</h3>
+                    <div id="stepsList" class="steps-list">
+                        <div class="step-item">
+                            <label>Étape 1:</label>
+                            <textarea class="step-input" rows="3" placeholder="Décrivez l'étape de préparation..."></textarea>
+                            <button type="button" class="btn-remove-step">✕</button>
+                        </div>
+                    </div>
+                    <button type="button" id="addStep" class="btn-secondary">+ Ajouter une étape</button>
+                    <span class="error-message" id="stepsError"></span>
+                </div>
+
+                <div class="form-section">
+                    <h3>Description (optionnel)</h3>
+                    <div class="form-group">
+                        <textarea id="recipeDescription" rows="4" placeholder="Ajoutez une description de votre recette..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Ajouter la recette</button>
+                    <button type="reset" class="btn-secondary">Réinitialiser</button>
+                </div>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <h3>✅ Votre recette a été ajoutée avec succès !</h3>
+                <p>Merci d'avoir partagé votre recette avec notre communauté.</p>
+                <a href="recettes.html" class="btn-primary">Voir toutes les recettes</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Recettes de Cuisine</h3>
+                    <p>Votre destination pour découvrir et partager des recettes délicieuses.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="recettes.html">Recettes</a></li>
+                        <li><a href="ajouter-recette.html">Ajouter une recette</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Réseaux Sociaux</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                        <a href="#" aria-label="YouTube">📺 YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@recettes-cuisine.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Recettes de Cuisine. Tous droits réservés.</p>
+                <p><a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/validation.js"></script>
+</body>
+</html>
+
