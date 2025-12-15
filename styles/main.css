@@ -133,6 +133,10 @@ body {
 .slide-content {
     text-align: center;
     z-index: 1;
+    padding: 2rem 3rem;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
 }
 
 .slide-content h2 {
@@ -144,6 +148,31 @@ body {
 .slide-content p {
     font-size: 1.2rem;
     animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+/* Images de fond pour chaque slide du hero */
+.slide-1 {
+    background-image:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)),
+        url('../images/pates.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-2 {
+    background-image:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)),
+        url('../images/SaladeCesar.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-3 {
+    background-image:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.15)),
+        url('../images/teramisou.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 @keyframes fadeInUp {
