@@ -233,40 +233,70 @@ function clearFieldError(field) {
 
 // Soumettre la recette
 function submitRecipe() {
-    const recipe = {
-        id: Date.now(),
-        name: document.getElementById('recipeName').value.trim(),
-        category: document.getElementById('recipeCategory').value,
-        difficulty: document.getElementById('recipeDifficulty').value,
-        prepTime: parseInt(document.getElementById('prepTime').value),
-        cookTime: parseInt(document.getElementById('cookTime').value) || 0,
-        servings: parseInt(document.getElementById('servings').value),
-        description: document.getElementById('recipeDescription').value.trim(),
-        ingredients: getIngredients(),
-        steps: getSteps(),
-        image: '', // Pas d'image par défaut, le placeholder CSS sera utilisé
-        rating: 0,
-        ratingCount: 0
-    };
-    
-    // Sauvegarder dans localStorage (simulation)
-    let savedRecipes = JSON.parse(localStorage.getItem('userRecipes') || '[]');
-    savedRecipes.push(recipe);
-    localStorage.setItem('userRecipes', JSON.stringify(savedRecipes));
-    
-    // Afficher le message de succès
-    const form = document.getElementById('addRecipeForm');
-    const successMessage = document.getElementById('successMessage');
-    
-    form.style.display = 'none';
-    successMessage.style.display = 'block';
-    
-    // Réinitialiser le formulaire après 3 secondes
-    setTimeout(() => {
-        form.reset();
-        form.style.display = 'block';
-        successMessage.style.display = 'none';
-    }, 5000);
+    const name = document.getElementById('recipeName').value.trim();
+    const category = document.getElementById('recipeCategory').value;
+    const difficulty = document.getElementById('recipeDifficulty').value;
+    const prepTime = parseInt(document.getElementById('prepTime').value);
+    const cookTime = parseInt(document.getElementById('cookTime').value) || 0;
+    const servings = parseInt(document.getElementById('servings').value);
+    const description = document.getElementById('recipeDescription').value.trim();
+    const ingredients = getIngredients();
+    const steps = getSteps();
+    const imageInput = document.getElementById('recipeImage');
+    const file = imageInput && imageInput.files && imageInput.files[0];
+
+    // Fonction interne pour créer et sauvegarder la recette
+    function buildAndSaveRecipe(imageDataUrl) {
+        const recipe = {
+            id: Date.now(),
+            name,
+            category,
+            difficulty,
+            prepTime,
+            cookTime,
+            servings,
+            description,
+            ingredients,
+            steps,
+            image: imageDataUrl || '', // Si aucune image, le placeholder CSS sera utilisé
+            rating: 0,
+            ratingCount: 0
+        };
+        
+        // Sauvegarder dans localStorage (simulation)
+        let savedRecipes = JSON.parse(localStorage.getItem('userRecipes') || '[]');
+        savedRecipes.push(recipe);
+        localStorage.setItem('userRecipes', JSON.stringify(savedRecipes));
+        
+        // Afficher le message de succès
+        const form = document.getElementById('addRecipeForm');
+        const successMessage = document.getElementById('successMessage');
+        
+        form.style.display = 'none';
+        successMessage.style.display = 'block';
+        
+        // Réinitialiser le formulaire après 3 secondes
+        setTimeout(() => {
+            form.reset();
+            if (imageInput) {
+                imageInput.value = '';
+            }
+            form.style.display = 'block';
+            successMessage.style.display = 'none';
+        }, 5000);
+    }
+
+    // Si l'utilisateur a choisi une image, la convertir en Data URL
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            buildAndSaveRecipe(e.target.result);
+        };
+        reader.readAsDataURL(file);
+    } else {
+        // Aucune image sélectionnée
+        buildAndSaveRecipe('');
+    }
 }
 
 // ============================================

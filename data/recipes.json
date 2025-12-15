@@ -7,7 +7,7 @@
     "prepTime": 15,
     "cookTime": 20,
     "servings": 4,
-    "image": "https://via.placeholder.com/400x300?text=Pates+Carbonara",
+    "image": "images/carbonara.jpeg",
     "description": "Un classique italien crémeux et savoureux",
     "ingredients": [
       "400g de pâtes",
@@ -36,7 +36,7 @@
     "prepTime": 15,
     "cookTime": 0,
     "servings": 4,
-    "image": "https://via.placeholder.com/400x300?text=Salade+Cesar",
+    "image": "images/SaladeCesar.jpeg",
     "description": "Une salade fraîche et croquante avec une sauce crémeuse",
     "ingredients": [
       "1 salade romaine",
@@ -65,7 +65,7 @@
     "prepTime": 30,
     "cookTime": 0,
     "servings": 6,
-    "image": "https://via.placeholder.com/400x300?text=Tiramisu",
+    "image": "images/teramisou.jpeg",
     "description": "Le dessert italien classique au café et mascarpone",
     "ingredients": [
       "500g de mascarpone",
@@ -96,7 +96,7 @@
     "prepTime": 5,
     "cookTime": 0,
     "servings": 2,
-    "image": "https://via.placeholder.com/400x300?text=Smoothie+Fruits",
+    "image": "images/smothieFruit.jpeg",
     "description": "Un smoothie rafraîchissant et vitaminé",
     "ingredients": [
       "2 bananes",
@@ -123,7 +123,7 @@
     "prepTime": 10,
     "cookTime": 30,
     "servings": 4,
-    "image": "https://via.placeholder.com/400x300?text=Risotto+Champignons",
+    "image": "images/resotto.jpeg", 
     "description": "Un risotto crémeux aux champignons parfumés",
     "ingredients": [
       "300g de riz arborio",
@@ -156,7 +156,7 @@
     "prepTime": 15,
     "cookTime": 25,
     "servings": 8,
-    "image": "https://via.placeholder.com/400x300?text=Brownies+Chocolat",
+    "image": "images/brownies.jpeg",
     "description": "Des brownies moelleux et fondants",
     "ingredients": [
       "200g de chocolat noir",
