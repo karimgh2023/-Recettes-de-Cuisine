@@ -2,13 +2,26 @@
 // MAIN.JS - Fonctions communes et utilitaires
 // ============================================
 
-// Charger les recettes depuis le fichier JSON
+// Charger les recettes depuis le fichier JSON + celles ajoutées par l'utilisateur (localStorage)
 let recipes = [];
 
 async function loadRecipes() {
     try {
+        // Recettes de base depuis le fichier JSON
         const response = await fetch('data/recipes.json');
-        recipes = await response.json();
+        const baseRecipes = await response.json();
+
+        // Recettes ajoutées par l'utilisateur (stockées dans le navigateur)
+        let userRecipes = [];
+        try {
+            userRecipes = JSON.parse(localStorage.getItem('userRecipes') || '[]');
+        } catch (e) {
+            console.warn('Impossible de lire les recettes utilisateur depuis localStorage:', e);
+            userRecipes = [];
+        }
+
+        // Fusionner les deux listes
+        recipes = [...baseRecipes, ...userRecipes];
         return recipes;
     } catch (error) {
         console.error('Erreur lors du chargement des recettes:', error);
