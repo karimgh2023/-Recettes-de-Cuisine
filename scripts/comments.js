@@ -285,7 +285,7 @@ function initShareButtons() {
     });
 }
 
-// Partager la recette
+// Partager la recette a reversiter 
 function shareRecipe(platform) {
     const url = window.location.href;
     const title = currentRecipe.name;
