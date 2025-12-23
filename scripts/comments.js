@@ -56,7 +56,7 @@ function loadRatingsAndComments() {
     }
 }
 
-// Fonction pour créer une image placeholder avec CSS (identique à main.js)
+// Fonction pour créer une image placeholder 
 function createPlaceholderImage(name) {
     const colors = [
         'linear-gradient(135deg, #ff6b6b, #ff8787)',
@@ -285,7 +285,7 @@ function initShareButtons() {
     });
 }
 
-// Partager la recette a reversiter 
+// Partager la recette
 function shareRecipe(platform) {
     const url = window.location.href;
     const title = currentRecipe.name;

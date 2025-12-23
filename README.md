@@ -16,45 +16,45 @@ Ce projet est un site web complet développé avec HTML, CSS et JavaScript vanil
 ## 🎯 Fonctionnalités
 
 ### Page d'Accueil (`index.html`)
-- ✅ Header avec logo et navigation
-- ✅ Slider d'images avec diaporama automatique
-- ✅ Moteur de recherche en temps réel
-- ✅ Catégories de recettes interactives
-- ✅ Section recettes populaires
-- ✅ Footer avec liens sociaux
+- Header avec logo et navigation
+-  Slider d'images avec diaporama automatique
+-  Moteur de recherche en temps réel
+-  Catégories de recettes interactives
+-  Section recettes populaires
+-  Footer avec liens sociaux
 
 ### Page des Recettes (`recettes.html`)
-- ✅ Affichage en grille responsive
-- ✅ Filtres dynamiques (catégorie, difficulté, temps)
-- ✅ Pagination automatique
-- ✅ Recherche et filtrage en temps réel
+-  Affichage en grille responsive
+-  Filtres dynamiques (catégorie, difficulté, temps)
+-  Pagination automatique
+-  Recherche et filtrage en temps réel
 
 ### Page Détail de Recette (`detail-recette.html`)
-- ✅ Affichage complet de la recette
-- ✅ Liste des ingrédients
-- ✅ Étapes de préparation numérotées
-- ✅ Système de notation en étoiles (1-5)
-- ✅ Système de commentaires
-- ✅ Boutons de partage sur réseaux sociaux
+-  Affichage complet de la recette
+-  Liste des ingrédients
+-  Étapes de préparation numérotées
+-  Système de notation en étoiles (1-5)
+-  Système de commentaires
+-  Boutons de partage sur réseaux sociaux
 
 ### Page Ajouter une Recette (`ajouter-recette.html`)
-- ✅ Formulaire complet et intuitif
-- ✅ Ajout dynamique d'ingrédients et d'étapes
-- ✅ Validation côté client
-- ✅ Message de confirmation
-- ✅ Conditions d'utilisation
+-  Formulaire complet et intuitif
+-  Ajout dynamique d'ingrédients et d'étapes
+-  Validation côté client
+-  Message de confirmation
+-  Conditions d'utilisation
 
 ### Page Contact (`contact.html`)
-- ✅ Formulaire de contact
-- ✅ Coordonnées de l'équipe
-- ✅ Liens vers réseaux sociaux
-- ✅ Validation du formulaire
+-  Formulaire de contact
+-  Coordonnées de l'équipe
+-  Liens vers réseaux sociaux
+-  Validation du formulaire
 
 ## 🛠️ Technologies Utilisées
 
 - **HTML5** : Structure sémantique et accessible
 - **CSS3** : Design moderne avec animations, grid, flexbox
-- **JavaScript (ES6+)** : Interactivité et gestion dynamique
+- **JavaScript ** : Interactivité et gestion dynamique
 - **LocalStorage** : Stockage local des données utilisateur
 
 ## 📁 Structure du Projet
@@ -84,13 +84,10 @@ Project web/
 
 1. **Ouvrir le projet** :
    - Ouvrir `index.html` dans un navigateur web moderne
-   - Ou utiliser un serveur local (recommandé pour éviter les problèmes CORS)
+   - Ou utiliser un serveur local 
 
-2. **Serveur local** (optionnel mais recommandé) :
+2. **Serveur local**  :
    ```bash
-   # Avec Python
-   python -m http.server 8000
-   
    # Avec Node.js (http-server)
    npx http-server
    
@@ -99,14 +96,14 @@ Project web/
    ```
    Puis accéder à `http://localhost:8000`
 
-## 🎨 Design et Responsive
+##  Design et Responsive
 
 - **Design moderne** : Utilisation de gradients, ombres et animations
 - **Responsive** : Adapté pour mobile, tablette et desktop
 - **Animations** : Transitions fluides et effets visuels
 - **Accessibilité** : Focus visible, navigation au clavier
 
-## ✨ Fonctionnalités JavaScript
+##  Fonctionnalités JavaScript
 
 ### Recherche Dynamique
 - Recherche en temps réel pendant la saisie
@@ -137,63 +134,22 @@ Project web/
 - Messages d'erreur clairs
 - Validation avant soumission
 
-## 📊 Critères d'Évaluation
-
-### ✅ Projet complet (13 pts)
-- Toutes les pages créées et fonctionnelles
-- Toutes les fonctionnalités implémentées
-- Respect des consignes du projet
-
-### ✅ Réponses aux questions (5 pts)
-- Code bien documenté et commenté
-- Structure claire et logique
-- Facile à expliquer
-
-### ✅ Créativité (2 pts)
-- Animations CSS avancées
-- Effets visuels uniques
-- Design moderne et attrayant
-- Transitions fluides
-
-### ✅ Technologies (Requis)
-- HTML pour la structure ✓
-- CSS pour la mise en forme ✓
-- JavaScript pour l'interactivité ✓
-
-## 🔧 Personnalisation
-
-### Modifier les couleurs
-Éditer les variables CSS dans `styles/main.css` :
-```css
-:root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #4ecdc4;
-    --accent-color: #ffe66d;
-}
-```
-
-### Ajouter des recettes
-Modifier le fichier `data/recipes.json` ou utiliser le formulaire d'ajout.
-
-### Personnaliser les animations
-Les animations sont définies dans `styles/main.css` avec les `@keyframes`.
-
-## 📝 Notes
+##  Notes
 
 - Les données sont stockées dans `localStorage` pour la démonstration
 - Pour un projet réel, il faudrait un backend avec base de données
 - Les images utilisent des placeholders - remplacer par de vraies images
 - Le site fonctionne entièrement côté client (pas de serveur requis)
 
-## 👥 Auteurs
+##  Auteurs
 
 Projet réalisé dans le cadre du cours de développement web.
 
-## 📄 Licence
+##  Licence
 
 Ce projet est un projet éducatif.
 
 ---
 
-**Bon appétit ! 🍽️**
+**Bon appétit ! **
 

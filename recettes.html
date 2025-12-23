@@ -30,53 +30,58 @@
         </div>
     </header>
 
-    <!-- Filtres -->
-    <section class="filters-section">
-        <div class="container">
-            <h2 class="section-title">Toutes les Recettes</h2>
-            <div class="filters">
-                <div class="filter-group">
-                    <label for="categoryFilter">Catégorie:</label>
-                    <select id="categoryFilter" class="filter-select">
-                        <option value="all">Toutes les catégories</option>
-                        <option value="entree">Entrées</option>
-                        <option value="plat">Plats Principaux</option>
-                        <option value="dessert">Desserts</option>
-                        <option value="boisson">Boissons</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="difficultyFilter">Difficulté:</label>
-                    <select id="difficultyFilter" class="filter-select">
-                        <option value="all">Tous les niveaux</option>
-                        <option value="facile">Facile</option>
-                        <option value="intermediaire">Intermédiaire</option>
-                        <option value="difficile">Difficile</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="timeFilter">Temps de préparation:</label>
-                    <select id="timeFilter" class="filter-select">
-                        <option value="all">Tous les temps</option>
-                        <option value="15">Moins de 15 min</option>
-                        <option value="30">Moins de 30 min</option>
-                        <option value="60">Moins de 1h</option>
-                        <option value="60+">Plus de 1h</option>
-                    </select>
-                </div>
-                <button id="resetFilters" class="btn-secondary">Réinitialiser</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Liste des Recettes -->
+    <!-- Liste des Recettes + Filtres (filtres à droite) -->
     <section class="recipes-section">
         <div class="container">
-            <div id="recipesContainer" class="recipes-grid">
-                <!-- Les recettes seront chargées dynamiquement -->
-            </div>
-            <div id="noResults" class="no-results" style="display: none;">
-                <p>Aucune recette ne correspond à vos critères.</p>
+            <h2 class="section-title">Toutes les Recettes</h2>
+
+            <div class="recipes-layout">
+                <!-- Colonne principale : recettes -->
+                <div class="recipes-main">
+                    <div id="recipesContainer" class="recipes-grid">
+                        <!-- Les recettes seront chargées dynamiquement -->
+                    </div>
+                    <div id="noResults" class="no-results" style="display: none;">
+                        <p>Aucune recette ne correspond à vos critères.</p>
+                    </div>
+                </div>
+
+                <!-- Colonne droite : filtres -->
+                <aside class="recipes-filters">
+                    <h3>Filtrer les recettes</h3>
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="categoryFilter">Catégorie:</label>
+                            <select id="categoryFilter" class="filter-select">
+                                <option value="all">Toutes les catégories</option>
+                                <option value="entree">Entrées</option>
+                                <option value="plat">Plats Principaux</option>
+                                <option value="dessert">Desserts</option>
+                                <option value="boisson">Boissons</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="difficultyFilter">Difficulté:</label>
+                            <select id="difficultyFilter" class="filter-select">
+                                <option value="all">Tous les niveaux</option>
+                                <option value="facile">Facile</option>
+                                <option value="intermediaire">Intermédiaire</option>
+                                <option value="difficile">Difficile</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="timeFilter">Temps de préparation:</label>
+                            <select id="timeFilter" class="filter-select">
+                                <option value="all">Tous les temps</option>
+                                <option value="15">Moins de 15 min</option>
+                                <option value="30">Moins de 30 min</option>
+                                <option value="60">Moins de 1h</option>
+                                <option value="60+">Plus de 1h</option>
+                            </select>
+                        </div>
+                        <button id="resetFilters" class="btn-secondary">Réinitialiser</button>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
